@@ -11,29 +11,33 @@
     <h1>Mas alla de las estrellas</h1>
 
     <h2 class="descripcion">Te gusto nuestra pagina? Envianos tu opinion!</h2>
-   <marquee scrollamount="5" behavior="Alternate">MasAllaDeLasEstrellas@gmail.com</marquee>
+
+    <marquee scrollamount="5" behavior="Alternate">MasAllaDeLasEstrellas@gmail.com</marquee>
+
     <form class="formulario">
+
         <div class="campo">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+            <input type="text" id="nombre" name="nombre" required>
         </div>
 
         <div class="campo">
             <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo">
+            <input type="email" id="correo" name="correo" required>
         </div>
 
         <div class="campo">
             <label for="tema">Tema de interes:</label>
-            <input type="text" id="tema" name="tema">
+            <input type="text" id="tema" name="tema" required>
         </div>
 
         <div class="campo">
             <label for="mensaje">Mensaje:</label>
-            <input type="text" id="mensaje" name="mensaje">
+            <input type="text" id="mensaje" name="mensaje" required>
         </div>
 
-        <button class="boton enviar" type="button">Enviar</button>
+        <button class="boton enviar" type="button" onclick="enviar()">Enviar</button>
+
     </form>
 
     <div class="navegacion">
@@ -42,6 +46,19 @@
         <a class="boton" href="index.html">Inicio</a>
         <a class="boton" href="contacto.html">Contactanos</a>
     </div>
+
+    <script>
+        function enviar() {
+            let formulario = document.querySelector(".formulario");
+
+            if (formulario.checkValidity()) {
+                alert("Mensaje enviado correctamente");
+                formulario.reset();
+            } else {
+                formulario.reportValidity();
+            }
+        }
+    </script>
 
 </body>
 </html>
