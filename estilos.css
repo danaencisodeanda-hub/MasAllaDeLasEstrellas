@@ -1,0 +1,285 @@
+/* ESTILO GENERAL */
+ {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0b0618;
+    color: #eee9ff;
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADOS */
+header {
+    background: #160d29;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #e8dfff;
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #c9aaff;
+    text-align: center;
+    font-size: 24px;
+}
+
+h3 {
+    color: #d8c5ff;
+}
+
+p {
+    color: #e4ddf5;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* MENU DE NAVEGACION */
+nav {
+    background: #eeeef5;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #25163c;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* PORTADA PRINCIPAL */
+.titulo-inicio {
+    text-align: center;
+    color: #eee3ff;
+    font-size: 32px;
+    margin: 20px;
+    text-shadow: 0 0 12px #9875c9;
+}
+
+/* IMAGEN GRANDE DE PORTADA */
+
+.banner {
+    display: block;
+    width: 90%;
+    height: 190px;
+    object-fit: cover;
+    margin: 15px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 18px #654c9e;
+}
+
+/* SUBTITULO */
+
+.subtitulo {
+    text-align: center;
+    color: #d9c4ff;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+/* CUATRO IMAGENES */
+
+.temas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+.temas a {
+    text-decoration: none;
+    color: #eee9ff;
+    display: block;
+}
+
+.temas img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.temas img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 18px #a77aff;
+}
+
+.temas p {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #eee9ff;
+}
+
+/* BOTON CONTACTANOS */
+
+.contacto-grande {
+    display: block;
+    width: 35%;
+    min-width: 180px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 35px;
+    background: #66508f;
+    padding: 15px;
+}
+
+/* PAGINAS DE INFORMACION */
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+    padding: 30px;
+}
+
+.contenido img {
+    width: 32%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #654c9e;
+}
+
+.dato {
+    width: 60%;
+    padding: 15px;
+    text-align: justify;
+}
+
+/* SECCIONES */
+section {
+    padding: 20px;
+}
+
+/* BOTONES */
+.boton,
+button,
+.navegacion a {
+    display: inline-block;
+    background: #66508f;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 25px;
+    margin: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton:hover,
+button:hover,
+.navegacion a:hover {
+    background: #9875c9;
+    transform: translateY(-3px);
+}
+
+/* BOTONES DE ATRAS Y SIGUIENTE */
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.navegacion a {
+    min-width: 150px;
+    text-align: center;
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #211538;
+    border-radius: 18px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    color: #e5d8ff;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #8b70b9;
+    border-radius: 25px;
+    background: #e1e5ed;
+    color: #20152e;
+    font-size: 15px;
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+marquee {
+color:  #FFFFFF;
+text-shadow: 
+        0 0 5px #FFFFFF,
+        0 0 10px #C77DFF,
+        0 0 20px #A855F7;
+font-size: 20px;
+font-family: georgia;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background: #160d29;
+    color: #c9b8ed;
+    text-align: center;
+    padding: 20px;
+}
+ 
+/* ADAPTACION PARA CELULARES */
+@media screen and (max-width: 600px) {
+
+    .titulo-inicio {
+        font-size: 25px;
+    }
+
+    .banner {
+        width: 95%;
+        height: 150px;
+    }
+
+    .temas {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .temas a {
+        flex: 0 0 42%;
+    }
+
+    .temas img {
+        height: 125px;
+    }
+
+    .temas p {
+        font-size: 14px;
+    }
+
+    .contacto-grande {
+        width: 65%;
+    }
+}
