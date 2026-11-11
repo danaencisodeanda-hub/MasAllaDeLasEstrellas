@@ -246,6 +246,62 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* TABLA DE NEBULOSAS */
+
+.tabla-nebulosas {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+ marquee {
+color:  #FFFFFF;
+text-shadow: 
+        0 0 5px #FFFFFF,
+        0 0 10px #C77DFF,
+        0 0 20px #A855F7;
+font-size: 28px;
+font-family: georgia;
+}
+
+.tabla-nebulosas p {
+    color: #E9D5FF;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.tabla-espacial {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #17112D;
+}
+
+.tabla-espacial th,
+.tabla-espacial td {
+    border: 2px solid #A78BFA;
+    padding: 14px;
+}
+
+.tabla-espacial th {
+    background-color: #59358C;
+    color: white;
+    text-shadow: 0 0 5px #D8B4FE;
+}
+
+.tabla-espacial td {
+    color: #E9D5FF;
+}
+
+.tabla-espacial tr:nth-child(even) {
+    background-color: #30204F;
+}
+
+.tabla-espacial tr:last-child {
+    background-color: #59358C;
+    font-weight: bold;
+}
+
  
 /* ADAPTACION PARA CELULARES */
 @media screen and (max-width: 600px) {
