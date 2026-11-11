@@ -303,39 +303,26 @@ font-family: georgia;
 }
 
  
+
+
+        
 /* ADAPTACION PARA CELULARES */
 @media screen and (max-width: 600px) {
 
-    .titulo-inicio {
-        font-size: 25px;
+    /* PAGINAS DE INFORMACION */
+    .contenido {
+        gap: 15px;
+        padding: 15px;
     }
 
-    .banner {
-        width: 95%;
-        height: 150px;
+    .contenido img {
+        width: 45%;
+        height: 340px;
+        flex-shrink: 0;
     }
 
-    .temas {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 12px;
-        padding: 10px;
+    .dato {
+        width: 55%;
     }
 
-    .temas a {
-        flex: 0 0 42%;
-    }
-
-    .temas img {
-        height: 125px;
-    }
-
-    .temas p {
-        font-size: 14px;
-    }
-
-    .contacto-grande {
-        width: 65%;
-    }
 }
